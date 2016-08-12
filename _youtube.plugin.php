@@ -23,7 +23,7 @@ class youtube_plugin extends Plugin
 	var $name = 'YouTube plugin';
 	var $code = 'youtube'; /* gets also used as default classname for the DIV container */
 	var $priority = 30; /* Should be at least below the Auto-P plugin's one */
-	var $version = '2.3';
+	var $version = '2.3.1';
 	var $author = 'Danny Ferguson';
 	var $help_url = 'http://manual.b2evolution.net/Plugins/youtube_plugin';
 	var $group = 'rendering';
@@ -75,7 +75,7 @@ class youtube_plugin extends Plugin
 	 * @see PluginSettings
 	 * @return array
 	 */
-	function GetDefaultSettings()
+	function GetDefaultSettings( & $params )
 	{
 		return array(
 			'perpage' => array(
@@ -438,7 +438,7 @@ class youtube_XmlToArray extends youtube_plugin
 	* @return none
 	*/
 
-	function youtube_XmlToArray($xml_url)
+	function __construct( $xml_url )
 	{
 		$this->fetch_remote_page($xml_url);
 	}
