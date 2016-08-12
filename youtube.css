@@ -1,0 +1,76 @@
+#yttoolbar {
+  text-align:left;
+  display:none;
+  position:relative;
+}
+
+#yttoolbar a:hover {
+	background-position: 0 0;
+	/* Because IE is stupid */
+}
+
+#ytloading {
+  display:none; 
+  margin:3px;
+  position:absolute;
+  top:1px;
+  left:1px;
+}
+
+div.viddetail {
+	display:none;
+}
+a:hover div.viddetail {
+	display:block;
+	height: 89px;
+	width: 122px;
+	border: 1px solid #E1DDCE;
+	float: left;
+	margin: 5px;
+	padding: 3px;
+	background: #FFF;
+	color: #111;
+	overflow: hidden;
+	text-decoration: none;
+}
+a:hover img.vidthumbnail {
+	display: none;
+}
+img.vidthumbnail {
+	float: left;
+	margin: 5px;
+}
+a#ytnext {
+	display:block;
+	height: 95px;
+	width: 20px;
+	background: transparent url('rightarrow.png') no-repeat top right;
+	float: left;
+	margin: 5px;
+}
+a:hover#ytnext {
+	background: transparent url('rightarrow.png') no-repeat top left;
+}
+#ytprev {
+	display:block;
+	height: 95px;
+	width: 20px;
+	float: left;
+	margin: 5px;
+	}
+a#ytprev {
+	background: transparent url('leftarrow.png') no-repeat top left;
+}
+a:hover#ytprev {
+	background: transparent url('leftarrow.png') no-repeat top right;
+}
+div#ytpagestore {
+	display: none;
+}
+#ytsearch {
+	margin-left: 60px;
+}
+#ythide {
+	float:right;
+	margin: 3px;
+}
